@@ -257,6 +257,7 @@ const Slider = class Slider extends React.Component {
   }
 
   handleOnMouseDown(ev) {
+    if (ev.target && ev.target.type === 'text') { return; }
     if (!this.props.dragEnabled) {
       this.callCallback('onMouseDown', ev);
       return;

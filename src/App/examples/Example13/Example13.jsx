@@ -18,6 +18,7 @@ export default () => (
     <p />
     <Slider className={s.slider}>
       <Slide index={0}>
+        <input type="text" />
         <h1>This is a test slide to demonstrate, how this affects height</h1>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
